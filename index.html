@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Школа шахмат "Ход конём"</title>
+  </head>
+  <body>
+    <img src="" alt="" />
+    <!-- Шапка сайта -->
+    <header
+      class="bg-black text-white px-10 w-full bg-opacity-80 z-10 fixed duration-150"
+    >
+      <div
+        class="flex items-center justify-between hover:opacity-100 duration-150"
+      >
+        <div>
+          <img src="assets/images/logo-main.png" class="max-w-[150px]" alt="" />
+        </div>
+        <nav class="flex items-center max-lg:hidden">
+          <ul>
+            <li class="nav-item"><a href="#about">О нас</a></li>
+            <li class="nav-item"><a href="#coaches">Тренеры</a></li>
+            <li class="nav-item"><a href="#reviews">Отзывы</a></li>
+            <li class="nav-item"><a href="#items">Товары</a></li>
+            <li class="nav-item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <a
+          href="#form"
+          class="border-2 a-button text-[18px] border-[#FDCD39] font-bold py-1 px-3 rounded-full"
+        >
+          <button>Оставить заявку</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Начальная страница -->
+      <section
+        class="bg-black pt-24 max-xl:pt-40 max-xl:p-10 max-md:text-center max-xl:bg-[url('/assets/images/bg-horse.png')] text-white mb-24 flex items-center gap-16 justify-around"
+      >
+        <article class="flex items-center justify-center flex-col">
+          <div class="text-[40px] max-sm:text-[32px] mb-12 uppercase font-bold">
+            <h1>
+              Ваш ребёнок <span class="text-[#FDCD39]">выполнит разряд</span>
+            </h1>
+            <h1>за <span class="text-[#FDCD39]">3 месяца*</span></h1>
+            <h1>
+              или мы вернем Вам <span class="text-[#FDCD39]">деньги</span>
+            </h1>
+          </div>
+          <h1 class="text-[20px] text-[#535353] font-medium">
+            *Проверено на практике с более
+            <span class="text-[#FDCD39]">5000 учениками</span>
+          </h1>
+          <a
+            href="#form"
+            class="border-2 a-button border-[#FDCD39] w-2/3 mt-12 text-[20px] font-bold text-center py-3 px-5 rounded-full"
+          >
+            <button>Записаться на урок</button>
+          </a>
+        </article>
+        <img src="assets/images/ferz-main.png" class="max-xl:hidden" alt="" />
+      </section>
+
+      <!-- О нас и преимущества -->
+      <section id="about" class="mt-10 px-10 max-sm:px-5 mb-24">
+        <h1 class="text-center text-6xl mb-16">О нас</h1>
+        <article
+          class="flex items-center justify-around gap-16 max-lg:flex-col"
+        >
+          <div class="max-w-[700px]">
+            <p class="text-2xl max-lg:text-center max-sm:text-xl mb-5">
+              Вы любите шахматы? Хотите научиться играть эту удивительную и
+              умопомрачительную игру? Тогда наша школа шахмат - идеальное место
+              для вас!
+            </p>
+            <p class="text-2xl max-lg:text-center max-sm:text-xl">
+              Не упустите возможность раскрыть свой шахматный потенциал вместе с
+              нами! Мы уверены, что шахматы принесут Вашим детям удовольствие,
+              развивая логическое мышление и стратегическое мышление.
+            </p>
+          </div>
+          <img
+            src="assets/images/main-img.png"
+            class="w-full max-w-[600px]"
+            alt=""
+          />
+        </article>
+        <div class="w-1/2 h-1 mx-auto bg-[#FDCD39] mt-16"></div>
+        <h1 class="text-center font-bold text-4xl max-sm:text-2xl mb-16 mt-10">
+          Наши преимущества
+        </h1>
+        <article
+          class="grid grid-cols-3 gap-20 text-center max-md:grid-cols-2 max-sm:grid-cols-1"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/1-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Обучение детей с 5 лет
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/2-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Организация шахматных турниров
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/3-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Заморозка занятий
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/4-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Оформление шахматных разрядов
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/5-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Выезд на соревнования
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/6-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Сеансы одновременной игры
+            </h1>
+          </div>
+        </article>
+      </section>
+
+      <!-- ОТЗЫВЫ И ТРЕНЕРЫ -->
+      <section class="bg-black bg-[url('/assets/images/bg-horse.png')] py-20">
+        <!-- Тренеры -->
+
+        <section id="coaches" class="text-white p-10 max-sm:p-3 coaches">
+          <h1 class="text-center text-6xl mb-10">Тренеры</h1>
+          <p
+            class="text-center text-2xl max-w-[900px] max-sm:text-xl mx-auto mb-3"
+          >
+            Наши тренеры - опытные шахматисты, обладающие международными
+            званиями и педагогическими навыками.
+          </p>
+          <p
+            class="text-center text-2xl max-w-[900px] max-sm:text-xl mx-auto mb-14"
+          >
+            Они разработали эффективные методики обучения, которые помогут
+            Вашему ребёнку освоить как основы игры, так и сложные стратегии и
+            тактики.
+          </p>
+          <swiper-container class="swiperCoach px-20 mb-10" navigation="true">
+            <swiper-slide>
+              <img
+                src="assets/images/coaches/1-coach.png"
+                class="mx-auto"
+                alt=""
+              />
+              <div class="text-center mt-5">
+                <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
+                <p class="text-xl">1 разряд</p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="assets/images/coaches/1-coach.png"
+                class="mx-auto"
+                alt=""
+              />
+              <div class="text-center mt-5">
+                <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
+                <p class="text-xl">1 разряд</p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="assets/images/coaches/1-coach.png"
+                class="mx-auto"
+                alt=""
+              />
+              <div class="text-center mt-5">
+                <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
+                <p class="text-xl">1 разряд</p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="assets/images/coaches/1-coach.png"
+                class="mx-auto"
+                alt=""
+              />
+              <div class="text-center mt-5">
+                <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
+                <p class="text-xl">1 разряд</p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <img
+                src="assets/images/coaches/1-coach.png"
+                class="mx-auto"
+                alt=""
+              />
+              <div class="text-center mt-5">
+                <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
+                <p class="text-xl">1 разряд</p>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </section>
+        <!-- Отзывы -->
+        <section id="reviews" class="text-white px-10 reviews">
+          <div class="w-1/2 h-1 mx-auto bg-[#FDCD39] mb-16"></div>
+          <h1 class="text-center text-6xl mb-24">Отзывы</h1>
+          <section
+            class="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-16 pb-20"
+          >
+            <article class="border-2 border-[#FDCD39] p-10">
+              <div>
+                <h1 class="text-[#FDCD39] text-2xl font-bold">
+                  Даниил Клютко Антонович
+                </h1>
+                <h1 class="text-[#FDCD39] text-xl">28.05.2023</h1>
+                <p class="mt-9 min-h-[130px]">
+                  Привела своего ребенка в эту классную школу и просто в шоке.
+                  Моего сына научили, воспитали чемпиона научили всему.
+                  Рекомендую обращаться в эту школу. Мильадиль лучший тренер!
+                </p>
+                <img src="assets/images/reviews/3-zvezdy.png" alt="" />
+              </div>
+            </article>
+            <article class="border-2 border-[#FDCD39] p-10">
+              <div>
+                <h1 class="text-[#FDCD39] text-2xl font-bold">
+                  Даниил Клютко Антонович
+                </h1>
+                <h1 class="text-[#FDCD39] text-xl">28.05.2023</h1>
+                <p class="mt-9 min-h-[130px]">
+                  Привела своего ребенка в эту классную школу и просто в шоке.
+                  Моего сына научили, воспитали чемпинона научили всему.
+                  Рекомендую обращаться в эту школу. Мильадиль лучший тренер!
+                </p>
+                <img src="assets/images/reviews/3-zvezdy.png" alt="" />
+              </div>
+            </article>
+            <article class="border-2 border-[#FDCD39] p-10">
+              <div>
+                <h1 class="text-[#FDCD39] text-2xl font-bold">
+                  Даниил Клютко Антонович
+                </h1>
+                <h1 class="text-[#FDCD39] text-xl">28.05.2023</h1>
+                <p class="mt-9 min-h-[130px]">
+                  Привела своего ребенка в эту классную школу и просто в шоке.
+                  Моего сына научили, воспитали чемпинона научили всему.
+                  Рекомендую обращаться в эту школу. Мильадиль лучший тренер!
+                </p>
+                <img src="assets/images/reviews/3-zvezdy.png" alt="" />
+              </div>
+            </article>
+            <article class="border-2 border-[#FDCD39] p-10">
+              <div>
+                <h1 class="text-[#FDCD39] text-2xl font-bold">
+                  Даниил Клютко Антонович
+                </h1>
+                <h1 class="text-[#FDCD39] text-xl">28.05.2023</h1>
+                <p class="mt-9 min-h-[130px]">
+                  Привела своего ребенка в эту классную школу и просто в шоке.
+                  Моего сына научили, воспитали чемпинона научили всему.
+                  Рекомендую обращаться в эту школу. Мильадиль лучший тренер!
+                </p>
+                <img src="assets/images/reviews/3-zvezdy.png" alt="" />
+              </div>
+            </article>
+            <article class="border-2 border-[#FDCD39] p-10">
+              <div>
+                <h1 class="text-[#FDCD39] text-2xl font-bold">
+                  Даниил Клютко Антонович
+                </h1>
+                <h1 class="text-[#FDCD39] text-xl">28.05.2023</h1>
+                <p class="mt-9 min-h-[130px]">
+                  Привела своего ребенка в эту классную школу и просто в шоке.
+                  Моего сына научили, воспитали чемпинона научили всему.
+                  Рекомендую обращаться в эту школу. Мильадиль лучший тренер!
+                </p>
+                <img src="assets/images/reviews/3-zvezdy.png" alt="" />
+              </div>
+            </article>
+            <article class="border-2 border-[#FDCD39] p-10">
+              <div>
+                <h1 class="text-[#FDCD39] text-2xl font-bold">
+                  Даниил Клютко Антонович
+                </h1>
+                <h1 class="text-[#FDCD39] text-xl">28.05.2023</h1>
+                <p class="mt-9 min-h-[130px]">
+                  Привела своего ребенка в эту классную школу и просто в шоке.
+                  Моего сына научили, воспитали чемпинона научили всему.
+                  Рекомендую обращаться в эту школу. Мильадиль лучший тренер!
+                </p>
+                <img src="assets/images/reviews/3-zvezdy.png" alt="" />
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <!-- Товары -->
+      <section id="items" class="max-sm:px-3">
+        <h1 class="text-center text-6xl mb-10 mt-24">Товары</h1>
+        <p
+          class="text-center text-2xl max-sm:text-xl max-w-[900px] mx-auto mb-5"
+        >
+          Для тех, кто проявляет умение и усердие в игре в шахматы, смогут
+          купить множество товаров за определенную "шахматную" валюту.
+        </p>
+        <p
+          class="text-center text-2xl max-sm:text-xl max-w-[900px] mx-auto mb-14"
+        >
+          Эти товары помогут Вашим детям в совершенствовании своей игры и
+          укреплении своего увлечения.
+        </p>
+        <swiper-container
+          class="swiperItems p-10"
+          pagination="true"
+          pagination-clickable="true"
+          slides-per-view="6"
+          space-between="25"
+        >
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+          <swiper-slide class="text-center shadow-2xl p-10 rounded-md">
+            <img src="assets/images/pen.png" class="mx-auto" alt="" />
+            <h1 class="text-2xl font-bold">Ручка</h1>
+            <h1 class="font-medium text-xl text-[#FDCD39]">3 Пешки</h1>
+          </swiper-slide>
+        </swiper-container>
+      </section>
+
+      <!-- Форма заявки -->
+      <section
+        id="form"
+        class="bg-black bg-[url('/assets/images/bg-horse.png')] gap-20 p-16 max-sm:p-3 py-32 mt-24 text-white flex items-center justify-around max-lg:flex-col-reverse"
+      >
+        <article>
+          <form
+            action=""
+            method="post"
+            class="border-4 border-[#FDCD39] bg-[url('/assets/images/ferz-bg.png')] bg-center bg-black min-w-[500px] max-md:min-w-0 max-md:w-full font-medium rounded-[21px] p-10"
+          >
+            <h1 class="text-center text-2xl font-bold mb-5">
+              Оставьте свою заявку
+            </h1>
+            <div class="flex flex-col mb-16">
+              <label for="name">Введите своё имя</label>
+              <input
+                name="name"
+                class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
+                type="text"
+                placeholder="Иван, Даниил..."
+              />
+            </div>
+
+            <div class="flex flex-col mb-16">
+              <label for="phone">Введите свой номер телефона</label>
+              <input
+                class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
+                required
+                name="phone"
+                type="number"
+                placeholder="Номер сотового телефона..."
+              />
+            </div>
+
+            <div class="flex flex-col mb-16">
+              <label for="mail">Введите свой E-mail</label>
+              <input
+                name="mail"
+                class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
+                required
+                type="email"
+                placeholder="Почта mail.ru или gmail.com..."
+              />
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="border-2 text-base border-[#FDCD39] font-bold py-3 px-16 rounded-full"
+              >
+                Отправить
+              </button>
+            </div>
+          </form>
+        </article>
+        <section class="text-center">
+          <img src="assets/images/form-ico.png" class="mx-auto" alt="" />
+          <h1 class="text-4xl font-bold mt-3">Форма для заявки</h1>
+          <div class="max-w-[800px] space-y-3">
+            <p class="text-xl mt-5">
+              Чтобы присоединиться к нашей школе шахмат, просто оставьте свою
+              заявку на нашем сайте, указав своё имя и контактную информацию. Мы
+              свяжемся с Вами в ближайшее время, чтобы обсудить подробности.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Контакты -->
+      <section id="contacts" class="px-10 mt-24">
+        <h1 class="text-center text-6xl mb-24 mt-16">Контакты</h1>
+        <section class="grid grid-cols-3 max-lg:grid-cols-1 max-lg:space-y-10">
+          <article class="text-center">
+            <img
+              src="assets/images/contacts/phone-icon.png"
+              class="max-w-[100px] mx-auto"
+              alt=""
+            />
+            <h1 class="text-2xl mt-5 mb-3 font-bold">Рабочие телефоны</h1>
+            <ul class="space-y-3">
+              <li class="font-medium text-xl text-[#FDCD39]">
+                +7-700-836-8184
+              </li>
+              <li class="font-medium text-xl text-[#FDCD39]">
+                +7-778-236-0071
+              </li>
+            </ul>
+          </article>
+
+          <article class="text-center">
+            <img
+              src="assets/images/contacts/mail-icon.png"
+              class="max-w-[100px] mx-auto"
+              alt=""
+            />
+            <h1 class="text-2xl mt-5 mb-3 font-bold">Почта E-mail</h1>
+            <ul>
+              <li class="font-medium text-xl text-[#FDCD39]">
+                schoolhodkonem@gmail.com
+              </li>
+            </ul>
+          </article>
+
+          <article class="text-center">
+            <img
+              src="assets/images/contacts/geo-icon.png"
+              class="max-w-[100px] mx-auto"
+              alt=""
+            />
+            <h1 class="text-2xl mt-5 mb-3 font-bold">Адреса наших филиалов</h1>
+            <ul class="space-y-3">
+              <li class="font-medium text-xl text-[#FDCD39]">
+                ул. Сауран 1 (Офис 706)
+              </li>
+              <li class="font-medium text-xl text-[#FDCD39]">
+                ул. Абылай хана проспект, 24/1
+              </li>
+              <li class="font-medium text-xl text-[#FDCD39]">
+                ул. Кенесары 17 (БЦ Жасамир)
+              </li>
+              <li class="font-medium text-xl text-[#FDCD39]">
+                ул. Улы Дала 27/3
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <div class="w-1/2 h-1 mx-auto bg-[#FDCD39] mt-16"></div>
+          <h1 class="text-4xl font-bold text-center mt-16">
+            Наши социальные сети
+          </h1>
+          <section
+            class="flex items-center justify-center flex-wrap gap-16 mt-10 mb-10"
+          >
+            <a href="https://vk.com/club174916416" target="_blank">
+              <svg
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
+              >
+                <path
+                  d="M21.8249 0.131885C17.313 0.71805 13.182 2.44724 9.56856 5.24129C8.42593 6.13031 6.48249 8.04511 5.53518 9.21744C2.83975 12.5586 1.05256 16.5054 0.290811 20.804C0.0173619 22.328 -0.0900647 25.9915 0.0857242 27.6621C0.505664 31.5601 1.86315 35.3799 3.97261 38.6234C4.92968 40.0888 5.76956 41.1341 7.07822 42.4725C11.1702 46.6734 16.3364 49.2134 22.2156 49.8973C23.5242 50.0536 26.708 50.0243 28.1241 49.8582C35.4291 48.9497 41.9528 44.8563 46.0252 38.6234C48.0761 35.4874 49.3847 31.8825 49.8535 28.1213C50.0488 26.5386 50.0488 23.4613 49.8535 21.8688C48.955 14.6199 44.8728 8.07442 38.7202 4.02988C35.5072 1.91969 31.9328 0.610586 28.1241 0.131885C26.6396 -0.0439644 23.2313 -0.0439644 21.8249 0.131885ZM15.5942 16.7887C16.0337 17.0525 16.1411 17.2577 16.6489 18.7426C17.4595 21.1166 18.6022 23.2659 19.8424 24.7704C20.9069 26.0599 21.6785 26.4702 22.0203 25.9329C22.157 25.7278 22.1765 25.3077 22.1472 22.6797C22.1179 19.8075 22.1082 19.6414 21.8933 19.1139C21.7664 18.8012 21.4929 18.3225 21.2781 18.0392C20.8483 17.4628 20.7897 17.0916 21.0925 16.7887C21.2781 16.6031 21.4148 16.5934 24.0809 16.5934H26.874L27.1572 16.8767L27.4404 17.16V20.804C27.4404 24.0572 27.46 24.4577 27.6065 24.6238C27.8604 24.9071 28.251 24.8387 28.7686 24.4089C29.921 23.4515 31.0441 21.8102 32.5188 18.9282C33.3098 17.3749 33.5735 16.9353 33.8177 16.779C34.1009 16.6129 34.3255 16.5934 36.2103 16.5934C38.2905 16.5934 38.2905 16.5934 38.5249 16.8376C38.6714 16.9744 38.769 17.1893 38.769 17.3456C38.769 17.8927 36.4057 22.0349 35.0482 23.8813C34.2278 24.995 34.179 25.0927 34.179 25.5519C34.179 26.0892 34.345 26.3335 35.3021 27.2518C36.3666 28.2678 37.4604 29.5671 38.4761 31.0325C39.3843 32.3319 39.4527 32.6347 38.9741 33.1134L38.6909 33.3967H36.6498C34.0911 33.3967 34.1692 33.4261 32.8313 31.902C30.4093 29.1568 28.3389 27.7891 27.6748 28.5218C27.5088 28.7074 27.4795 28.9419 27.4404 30.7297L27.3916 32.7324L27.0303 33.0646L26.6591 33.3967H25.3017C24.1883 33.3967 23.7782 33.3577 23.0164 33.1623C21.1316 32.6836 19.3639 31.648 17.6939 30.0361C15.1938 27.623 12.5863 23.217 11.1604 18.9966C10.6624 17.4921 10.6428 17.2674 11.0237 16.8767L11.3069 16.5934H13.2992C15.0961 16.5934 15.311 16.6129 15.5942 16.7887Z"
+                />
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@hodkonemkz" target="_blank">
+              <svg
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
+              >
+                <path
+                  d="M21.75 0.148459C16.1875 0.908994 11.2083 3.36771 7.29167 7.28499C4.51042 10.0667 2.5 13.3172 1.27083 17.0261C0.333333 19.8286 0 21.9435 0 24.9961C0 28.0278 0.333333 30.1323 1.25 32.9348C4.23958 42.0196 12.2083 48.5831 21.8125 49.8437C23.4167 50.0521 26.5938 50.0521 28.1979 49.8437C36.8854 48.6977 44.3021 43.1969 47.8646 35.2373C49.3438 31.9243 50 28.7571 50 24.9961C50 21.9748 49.6667 19.8495 48.75 17.0782C45.7604 7.9726 37.7813 1.40907 28.1979 0.148459C26.6875 -0.0494888 23.1875 -0.0494888 21.75 0.148459ZM31.5625 10.3896C31.5625 10.8897 31.8125 11.7649 32.1563 12.4316C32.8021 13.7131 34.4896 14.8591 35.8854 14.9737L36.5625 15.0258V17.4012V19.7869H36.2083C35.1667 19.7869 32.9063 19.1723 32.0104 18.6409C31.8125 18.5263 31.6354 18.4326 31.6146 18.4326C31.5938 18.4326 31.5625 21.5372 31.5417 25.3295C31.5 32.0805 31.5 32.2576 31.2708 33.0703C30.1354 37.1647 26.625 39.9151 22.5208 39.9047C20.8542 39.9047 19.8854 39.6755 18.4375 38.9566C16.3021 37.8835 14.5938 35.852 13.875 33.5391C12.4896 29.0176 14.8438 24.2251 19.3125 22.4853C20.0521 22.1936 21.5938 21.8706 22.1979 21.8706H22.5V24.2564V26.6318L21.875 26.7047C21.0521 26.7985 19.9375 27.361 19.375 27.9757C17.8333 29.6531 17.875 32.3618 19.4583 33.9454C21.4063 35.8936 24.8021 35.4561 26.1979 33.0807C26.7813 32.0805 26.7708 32.341 26.7708 20.7038V9.99375H29.1667H31.5625V10.3896Z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://www.facebook.com/schoolhodkonem/" target="_blank">
+              <svg
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
+              >
+                <path
+                  d="M21.9456 0.13239C14.18 1.07384 7.35222 5.60459 3.30828 12.489C1.62819 15.3526 0.456033 18.9615 0.0946178 22.3644C-0.0519018 23.7766 -0.0225979 26.8559 0.143458 28.1995C0.631856 32.0535 1.931 35.584 4.06041 38.8693C5.91633 41.7427 8.71974 44.4886 11.7185 46.3911C14.0726 47.8719 17.169 49.1468 19.6794 49.647C20.1092 49.7352 20.5585 49.8235 20.6855 49.8529L20.9004 49.9019V40.0951V30.2883H17.8723H14.8443V26.8069V23.3255H17.8626H20.8809L20.9199 19.7656C20.959 16.294 20.9688 16.1959 21.2227 15.2447C22.0433 12.1653 24.0164 10.1255 26.9663 9.30175C28.2752 8.9389 29.633 8.86045 32.1531 8.99774C33.4034 9.06639 34.5951 9.14485 34.8002 9.17427L35.1616 9.2233V12.3026V15.382H33.0322C31.8601 15.382 30.6391 15.431 30.3265 15.4898C29.3106 15.6762 28.6562 16.1469 28.285 16.9413C28.0896 17.3629 28.0799 17.5787 28.0506 20.354L28.0212 23.3255H31.44C34.6244 23.3255 34.8686 23.3353 34.8686 23.4922C34.8686 23.708 34.0969 29.7686 34.0383 30.0628L33.9895 30.2883H31.0102H28.031V40.1442V50H28.2557C28.6073 50 30.1604 49.7058 31.1568 49.4606C33.4132 48.8918 36.2654 47.6758 38.1897 46.4695C40.3484 45.126 43.1421 42.6351 44.5584 40.8306C47.3228 37.2806 48.9735 33.554 49.7257 29.1703C49.9894 27.6601 50.0871 24.1591 49.9113 22.4723C49.1689 15.1172 45.2324 8.52702 39.0688 4.28067C35.7673 2.0153 31.9968 0.603117 27.9529 0.13239C26.4486 -0.0441321 23.4205 -0.0441321 21.9456 0.13239Z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/schoolhodkonem/" target="_blank">
+              <svg
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
+              >
+                <path
+                  d="M21.8249 0.131882C17.313 0.718018 13.182 2.44712 9.56856 5.24104C8.42593 6.13001 6.48249 8.04473 5.53518 9.217C2.83975 12.558 1.05256 16.5046 0.290811 20.803C0.0173619 22.3269 -0.0900647 25.9903 0.0857242 27.6608C0.88654 35.1438 5.01758 41.8746 11.3753 46.0264C14.5395 48.0876 18.1041 49.3869 21.9714 49.8656C23.4559 50.0512 26.581 50.0414 28.1241 49.8558C39.4527 48.4491 48.4472 39.4519 49.8535 28.1199C50.0488 26.5373 50.0488 23.4504 49.8535 21.8678C48.955 14.5997 44.8826 8.0838 38.7202 4.02969C35.5072 1.9196 31.9328 0.61056 28.1241 0.131882C26.6396 -0.0439592 23.2313 -0.0439592 21.8249 0.131882ZM31.5031 10.8289C32.9485 10.9559 33.9348 11.2196 35.0579 11.7765C35.8392 12.1575 36.1224 12.3724 36.8744 13.1148C37.6167 13.867 37.8315 14.1503 38.2124 14.9318C39.2085 16.9442 39.2866 17.7746 39.228 25.7754C39.1987 31.5879 39.1792 32.0373 38.9937 32.8676C38.2807 35.9937 36.2982 38.1135 33.3684 38.856C32.0207 39.2077 30.7316 39.2663 24.9989 39.2663C17.8013 39.2663 16.8833 39.1686 14.9399 38.2112C14.1586 37.8302 13.8754 37.6153 13.1234 36.8729C12.3812 36.1207 12.1663 35.8374 11.7855 35.0559C10.8284 33.1118 10.7405 32.2619 10.7405 24.9938C10.7405 17.7258 10.8284 16.8759 11.7855 14.9318C12.1663 14.1503 12.3714 13.867 13.1234 13.1246C14.3442 11.9132 15.438 11.3466 17.313 10.9656C18.6705 10.6921 28.7784 10.5944 31.5031 10.8289Z"
+                />
+                <path
+                  d="M18.9928 13.2711C17.0493 13.4079 15.8091 13.8768 14.8325 14.8537C13.8558 15.8403 13.4359 16.9931 13.2797 19.1129C13.1625 20.7248 13.1625 29.2629 13.2797 30.8747C13.4359 32.9848 13.8656 34.1571 14.852 35.1438C15.8872 36.1891 16.9908 36.5603 19.4323 36.7263C21.5124 36.8631 31.1222 36.785 32.0207 36.6287C34.7064 36.1402 36.142 34.7042 36.6303 32.0177C36.7865 31.119 36.8647 21.5063 36.7279 19.4255C36.5619 16.954 36.2006 15.8892 35.1458 14.8439C34.1399 13.8377 32.9973 13.4176 30.8195 13.2711C29.3155 13.1637 20.5456 13.1734 18.9928 13.2711ZM33.4075 15.8696C34.0325 16.192 34.4524 17.0517 34.2767 17.6574C33.8958 19.0055 32.4602 19.4255 31.5129 18.478C30.1945 17.1592 31.7473 15.0198 33.4075 15.8696ZM27.001 17.9602C28.2803 18.3607 29.1592 18.898 30.1261 19.8651C31.1027 20.842 31.6301 21.7115 32.0402 23.0401C32.3723 24.0951 32.3723 25.8926 32.0402 26.9476C31.6301 28.2762 31.1027 29.1456 30.1261 30.1225C29.1495 31.0994 28.2803 31.627 26.9521 32.0373C25.8974 32.3694 24.1004 32.3694 23.0457 32.0373C21.7175 31.627 20.8483 31.0994 19.8717 30.1225C18.8951 29.1456 18.3678 28.2762 17.9576 26.9476C17.6255 25.8926 17.6255 24.0951 17.9576 23.0401C18.6998 20.6271 20.5065 18.771 22.8308 18.009C23.6707 17.7355 24.2079 17.6769 25.2919 17.716C25.9755 17.7355 26.5419 17.8234 27.001 17.9602Z"
+                />
+                <path
+                  d="M23.4656 20.4026C22.1863 20.8227 21.0046 21.9363 20.4968 23.2063C20.3014 23.6947 20.2624 23.9389 20.2624 24.994C20.2624 26.0393 20.3014 26.2933 20.487 26.7719C20.9655 27.954 22.0398 29.0286 23.2215 29.5072C23.7 29.6929 23.9539 29.7319 24.9989 29.7319C26.0439 29.7319 26.2978 29.6929 26.7763 29.5072C27.958 29.0286 29.0323 27.954 29.5108 26.7719C29.6964 26.2933 29.7354 26.0393 29.7354 24.994C29.7354 23.9487 29.6964 23.6947 29.5108 23.216C29.0323 22.034 27.9483 20.9497 26.7763 20.4905C25.9657 20.1681 24.3153 20.1291 23.4656 20.4026Z"
+                />
+              </svg>
+            </a>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

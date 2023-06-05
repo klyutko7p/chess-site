@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&family=Ubuntu:wght@300;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+}
+
+.nav-item {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 50px;
+  transition: 0.2s;
+  text-shadow: black 0 0 2px;
+}
+
+.nav-item:hover {
+  color: #fdcd39;
+  transition: 0.2s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.a-button {
+  transition: 0.2s;
+}
+
+.a-button:hover {
+  transition: 0.2s;
+  background-color: #fdcd39;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fdcd39;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fdcd39;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+  font-size: 10px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: "";
+  font-size: 10px !important;
+}
