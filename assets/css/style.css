@@ -67,3 +67,7 @@ p {
   content: "";
   font-size: 10px !important;
 }
+
+.coachRew {
+  background-image: url("/assets/images/bg-horse.png");
+}
