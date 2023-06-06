@@ -19,7 +19,11 @@
         class="flex items-center justify-between hover:opacity-100 duration-150"
       >
         <div>
-          <img src="assets/images/logo-main.png" class="max-w-[150px]" alt="" />
+          <img
+            src="assets/images/logo-main.png"
+            class="max-w-[150px] max-sm:w-[90px]"
+            alt=""
+          />
         </div>
         <nav class="flex items-center max-lg:hidden">
           <ul>
@@ -32,7 +36,7 @@
         </nav>
         <a
           href="#form"
-          class="border-2 a-button text-[18px] border-[#FDCD39] font-bold py-1 px-3 rounded-full"
+          class="border-2 a-button max-sm:text-sm text-base border-[#FDCD39] font-bold py-1 px-3 rounded-full"
         >
           <button>Оставить заявку</button>
         </a>
@@ -77,20 +81,20 @@
 
       <!-- О нас и преимущества -->
       <section id="about" class="mt-10 px-5 max-sm:px-5 mb-24">
-        <h1 class="text-center text-6xl mb-16">О нас</h1>
+        <h1 class="text-center text-4xl mb-16">О нас</h1>
         <article
           class="flex items-center justify-around gap-16 max-lg:flex-col"
         >
           <div class="max-w-[700px]">
-            <p class="text-2xl max-lg:text-center max-sm:text-xl mb-5">
-              Вы любите шахматы? Хотите научиться играть эту удивительную и
-              умопомрачительную игру? Тогда наша школа шахмат - идеальное место
-              для вас!
+            <p class="text-2xl text-center max-sm:text-xl mb-5">
+              Школа шахмат "Ход конём" обучает детей уже более 9-ти лет. Имеем
+              более 10 филиалов, 7 из которых находятся в г. Астана. Среди наших
+              учеников есть чемпионы Республики и Азии.
             </p>
-            <p class="text-2xl max-lg:text-center max-sm:text-xl">
-              Школа шахмат "Ход конём" предоставляет обучение как в оффлайн, так
-              и в онлайн формате. Наши школы располагаются в множестве городов
-              Казахстана: Астана, Кокшетау, Костанай и т.д.
+            <p class="text-2xl text-center max-sm:text-xl">
+              Наша школа предоставляет обучение как в оффлайн, так и в онлайн
+              формате. Наши школы располагаются в множестве городов Казахстана:
+              Астана, Кокшетау, Костанай и т.д.
             </p>
           </div>
           <img
@@ -100,7 +104,7 @@
           />
         </article>
         <div class="w-1/2 h-1 mx-auto bg-[#FDCD39] mt-16"></div>
-        <h1 class="text-center font-bold text-3xl mb-16 mt-10">
+        <h1 class="text-center font-bold text-4xl mb-16 mt-10">
           Наши преимущества
         </h1>
         <article
@@ -413,38 +417,44 @@
             method="post"
             class="border-4 border-[#FDCD39] bg-center bg-black min-w-[500px] max-md:min-w-0 max-md:w-full font-medium rounded-[21px] p-10"
           >
-            <h1 class="text-center text-2xl font-bold mb-5">
+            <h1 class="text-center text-4xl font-bold mb-16">
               Оставьте свою заявку
             </h1>
             <div class="flex flex-col mb-16">
-              <label for="name">Введите своё имя</label>
+              <label for="name" class="text-base font-bold"
+                >Введите своё имя</label
+              >
               <input
                 name="name"
                 class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
                 type="text"
-                placeholder="Иван, Даниил..."
+                placeholder="Ваше имя"
               />
             </div>
 
             <div class="flex flex-col mb-16">
-              <label for="phone">Введите свой номер телефона</label>
+              <label for="phone" class="text-base font-bold"
+                >Введите свой номер телефона</label
+              >
               <input
                 class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
                 required
                 name="phone"
                 type="number"
-                placeholder="Номер сотового телефона..."
+                placeholder="Ваш телефон"
               />
             </div>
 
             <div class="flex flex-col mb-16">
-              <label for="mail">Введите свой E-mail</label>
+              <label for="mail" class="text-base font-bold"
+                >Введите свой E-mail</label
+              >
               <input
                 name="mail"
                 class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
                 required
                 type="email"
-                placeholder="Почта mail.ru или gmail.com..."
+                placeholder="Ваша почта"
               />
             </div>
             <div class="flex justify-center">
@@ -498,7 +508,7 @@
             />
             <h1 class="text-2xl mt-5 mb-3 font-bold">Почта E-mail</h1>
             <ul>
-              <li class="font-medium text-xl text-[#FDCD39]">
+              <li class="font-medium break-words text-xl text-[#FDCD39]">
                 schoolhodkonem@gmail.com
               </li>
             </ul>
@@ -510,7 +520,7 @@
               class="max-w-[100px] mx-auto"
               alt=""
             />
-            <h1 class="text-2xl mt-5 mb-3 font-bold">Адреса наших филиалов</h1>
+            <h1 class="text-2xl mt-5 mb-3 font-bold">Адреса филиалов</h1>
             <ul class="space-y-3">
               <li class="font-medium text-xl text-[#FDCD39]">
                 ул. Сауран 1 (Офис 706)
