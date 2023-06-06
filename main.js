@@ -12,11 +12,11 @@ Object.assign(swiperElCoach, {
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 40,
     },
-    1280: {
-      slidesPerView: 4,
+    1300: {
+      slidesPerView: 3,
       spaceBetween: 50,
     },
   },

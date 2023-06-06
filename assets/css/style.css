@@ -55,15 +55,3 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #fdcd39;
 }
-
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
-  content: "";
-  font-size: 10px !important;
-}
-
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-prev:after {
-  content: "";
-  font-size: 10px !important;
-}
