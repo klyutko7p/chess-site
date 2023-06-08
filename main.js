@@ -29,7 +29,6 @@ Object.assign(swiperElItems, {
   slidesPerView: 1,
   spaceBetween: 10,
   navigation: true,
-  loop: true,
   breakpoints: {
     300: {
       slidesPerView: 1,
