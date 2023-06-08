@@ -51,3 +51,32 @@ Object.assign(swiperElItems, {
 });
 
 swiperElItems.initialize();
+
+let burgerMenu = document.querySelector(".burger-menu");
+let exitButton = document.querySelector(".exit-menu");
+let navbarMenu = document.querySelector(".navbar-menu");
+
+burgerMenu.addEventListener("click", () => {
+  navbarMenu.classList.remove("hidden");
+  navbarMenu.classList.add(
+    "fixed",
+    "bg-black",
+    "navbar-menu",
+    "z-20",
+    "w-screen",
+    "h-screen",
+    "flex",
+    "text-white",
+    "items-center",
+    "justify-center",
+    "text-center",
+    "duration-200"
+  );
+});
+
+exitButton.addEventListener("click", () => {
+  navbarMenu.cl;
+  navbarMenu.className = "hidden";
+});
+
+AOS.init();

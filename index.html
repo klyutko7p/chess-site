@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="assets/images/favicon.img" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Школа шахмат "Ход конём"</title>
   </head>
   <body>
@@ -34,14 +36,34 @@
             <li class="nav-item"><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
+        <div
+          class="space-y-2 hidden max-lg:block burger-menu"
+          data-aos="fade-up"
+        >
+          <div class="w-8 h-0.5 bg-white"></div>
+          <div class="w-8 h-0.5 bg-white"></div>
+          <div class="w-8 h-0.5 bg-white"></div>
+        </div>
         <a
           href="#form"
-          class="border-2 a-button max-sm:text-sm text-base border-[#FDCD39] font-bold py-1 px-3 rounded-full"
+          class="border-2 a-button max-lg:hidden max-sm:text-sm text-base border-[#FDCD39] font-bold py-1 px-3 rounded-full"
         >
           <button>Оставить заявку</button>
         </a>
       </div>
     </header>
+    <div class="navbar-menu hidden" data-aos="fade-up">
+      <div class="absolute top-0 right-10">
+        <button class="text-8xl exit-menu">X</button>
+      </div>
+      <nav class="flex flex-col">
+        <a href="#about">О нас</a>
+        <a href="#coaches">Тренеры</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#items">Товары</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
 
     <!-- Основная страница -->
     <main>
@@ -87,14 +109,15 @@
         >
           <div class="max-w-[700px]">
             <p class="text-2xl text-center max-sm:text-xl mb-5">
-              Школа шахмат "Ход конём" обучает детей уже более 9-ти лет. Имеем
-              более 10 филиалов, 7 из которых находятся в г. Астана. Среди наших
-              учеников есть чемпионы Республики и Азии.
+              Школа шахмат "Ход конём" обучает детей уже более 9-ти лет. Мы
+              имеем более 10 филиалов, 7 из которых находятся в г. Астана. Среди
+              наших учеников есть чемпионы
+              <span class="font-bold"> Республики и Азии.</span>
             </p>
             <p class="text-2xl text-center max-sm:text-xl">
               Наша школа предоставляет обучение как в оффлайн, так и в онлайн
               формате. Наши школы располагаются в множестве городов Казахстана:
-              Астана, Кокшетау, Костанай и т.д.
+              <span class="font-bold"> Астана, Кокшетау, Костанай и т.д. </span>
             </p>
           </div>
           <img
@@ -214,7 +237,9 @@
               />
               <div class="text-center mt-5">
                 <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
-                <p class="text-base mt-3">1 разряд</p>
+                <p class="text-base mt-3">
+                  КМС по шахматам; Постоянный участник турниров по шахматам
+                </p>
               </div>
             </swiper-slide>
             <swiper-slide>
@@ -226,19 +251,24 @@
               <div class="text-center mt-5">
                 <h1 class="text-2xl text-[#FDCD39]">Сабыр Абзал</h1>
                 <p class="text-base mt-3">
-                  1 разряд; успешно обучает детей с 2018 года
+                  КМС по шахматам; Стаж работы более 5-ти лет; Является
+                  национальным арбитром
                 </p>
               </div>
             </swiper-slide>
             <swiper-slide>
               <img
-                src="assets/images/coaches/1-coach.png"
+                src="assets/images/coaches/5-coach.png"
                 class="mx-auto w-[300px] h-[450px] max-sm:h-full"
                 alt=""
               />
               <div class="text-center mt-5">
-                <h1 class="text-2xl text-[#FDCD39]">Даулетбеков Салауат</h1>
-                <p class="text-base mt-3">1 разряд</p>
+                <h1 class="text-2xl text-[#FDCD39]">Мильадиль Абатов</h1>
+                <p class="text-base mt-3">
+                  Постоянный участник турниров по шахматам; Судит
+                  Республиканские Турниры; Прошёл курсы повышенной квалификации
+                  в сфере шахмат и педагогики
+                </p>
               </div>
             </swiper-slide>
           </swiper-container>
@@ -256,14 +286,14 @@
                   Алима Мукашева
                 </h1>
                 <img src="assets/images/reviews/5-zvezdy.png" alt="" />
-                <p class="mt-9 min-h-[130px] text-base">
-                  Привела своего Ораза на шахматы недавно, думала пусть улучшит
+                <p class="mt-9 min-h-[130px] text-base italic">
+                  "Привела своего Ораза на шахматы недавно, думала пусть улучшит
                   математику в школе, занимаемся 3-й месяц, результаты радуют,и
                   классный руководитель отметила это, а вот младшему - Касыму
                   нет и пяти, он просто первое время сидел с братиком и молча
                   слушал,а потом начал проситься тоже,и я его записала теперь
                   вожу обоих, Касым кстати стал заметно усидчивее,тренера тоже
-                  радуют, спасибо Вам большое Павел!
+                  радуют, спасибо Вам большое Павел!"
                 </p>
               </div>
             </article>
@@ -273,13 +303,13 @@
                   Кайрат Кужегалиев
                 </h1>
                 <img src="assets/images/reviews/5-zvezdy.png" alt="" />
-                <p class="mt-9 min-h-[130px] text-base">
-                  Нурали от шахмат без ума готов играть целыми днями, правда,
+                <p class="mt-9 min-h-[130px] text-base italic">
+                  "Нурали от шахмат без ума готов играть целыми днями, правда,
                   его знания ограничивались только тем как ходят фигуры, толк в
                   его занятиях вижу, уже выполнил 4 разряд, на подходе 3-й,но
                   больше радует,что Нурали из проигранных партий делает выводы и
                   в следующий раз таких ошибок старается не допускать, думаю в
-                  жизни шахматы ему точно пригодятся...
+                  жизни шахматы ему точно пригодятся..."
                 </p>
               </div>
             </article>
@@ -289,13 +319,13 @@
                   Куанышбаева Гаухар
                 </h1>
                 <img src="assets/images/reviews/5-zvezdy.png" alt="" />
-                <p class="mt-9 min-h-[130px] text-base">
-                  Я очень благодарна шахматной школе "Ход конем", тренеру Юркову
-                  П. С. Уважаемый Павел Сергеевич, выражаю Вам искреннюю
+                <p class="mt-9 min-h-[130px] text-base italic">
+                  "Я очень благодарна шахматной школе "Ход конем", тренеру
+                  Юркову П. С. Уважаемый Павел Сергеевич, выражаю Вам искреннюю
                   признательность и благодарность за труд по воспитанию и
                   обучению наших детей, за творческий подход, за организацию
                   шахматных турниров. Желаю Вам от всей души крепкого здоровья,
-                  счастья и успехов в Вашем благородном деле!!!
+                  счастья и успехов в Вашем благородном деле!!!"
                 </p>
               </div>
             </article>
@@ -353,6 +383,12 @@
         >
           Для тех, кто проявляет умение и усердие в игре в шахматы, смогут
           купить множество товаров за определенную "шахматную" валюту.
+        </p>
+        <p
+          class="text-center font-light text-2xl max-sm:text-xl max-w-[900px] mx-auto mb-5"
+        >
+          Chess Money - шахматные деньги (баллы), которые ребенок получает за
+          выполнения домашнего задания или участия в турнирах.
         </p>
         <p
           class="text-center font-light text-2xl max-sm:text-xl max-w-[900px] mx-auto mb-14"
