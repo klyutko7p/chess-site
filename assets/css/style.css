@@ -55,7 +55,3 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #fdcd39;
 }
-
-.navbar-menu {
-  background-image: url("/assets/images/bg-horse.png");
-}
