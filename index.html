@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <title>Школа шахмат "Ход конём"</title>
   </head>
   <body>
@@ -99,7 +100,12 @@
             <h1>
               Ваш ребёнок <span class="text-[#FDCD39]">выполнит разряд</span>
             </h1>
-            <h1>за <span class="text-[#FDCD39]">3 месяца*</span></h1>
+            <h1>
+              за
+              <span class="text-[#FDCD39]"
+                >3 месяца<span class="text-[32px]">*</span>
+              </span>
+            </h1>
             <h1>
               или мы вернем Вам <span class="text-[#FDCD39]">деньги</span>
             </h1>
@@ -174,6 +180,12 @@
             </h1>
           </div>
           <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/9-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Корпоративное обучение
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
             <img src="assets/images/advantages/4-icon.png" alt="" />
             <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
               Оформление шахматных разрядов
@@ -184,6 +196,16 @@
             <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
               Выезд на соревнования
             </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/8-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">
+              Летний лагерь
+            </h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="assets/images/advantages/7-icon.png" alt="" />
+            <h1 class="text-2xl mt-3 font-medium min-h-[100px]">Chess Money</h1>
           </div>
           <div class="flex flex-col justify-center items-center">
             <img src="assets/images/advantages/6-icon.png" alt="" />
@@ -548,8 +570,7 @@
       >
         <article>
           <form
-            action=""
-            method="post"
+            id="application-form"
             class="border-4 border-[#FDCD39] bg-center bg-black min-w-[500px] max-md:min-w-0 max-md:w-full font-medium rounded-[21px] p-10"
           >
             <h1 class="text-center text-4xl font-bold mb-16">
@@ -561,8 +582,10 @@
               >
               <input
                 name="name"
+                id="name"
                 class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
                 type="text"
+                required
                 placeholder="Ваше имя"
               />
             </div>
@@ -575,21 +598,9 @@
                 class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
                 required
                 name="phone"
+                id="phone"
                 type="number"
                 placeholder="Ваш телефон"
-              />
-            </div>
-
-            <div class="flex flex-col mb-16">
-              <label for="mail" class="text-base font-bold"
-                >Введите свой E-mail</label
-              >
-              <input
-                name="mail"
-                class="py-3 px-5 bg-transparent border-2 border-white w-full rounded-full mt-3"
-                required
-                type="email"
-                placeholder="Ваша почта"
               />
             </div>
             <div class="flex justify-center">
@@ -701,18 +712,6 @@
               </svg>
             </a>
 
-            <a href="https://www.facebook.com/schoolhodkonem/" target="_blank">
-              <svg
-                viewBox="0 0 50 50"
-                xmlns="http://www.w3.org/2000/svg"
-                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
-              >
-                <path
-                  d="M21.9456 0.13239C14.18 1.07384 7.35222 5.60459 3.30828 12.489C1.62819 15.3526 0.456033 18.9615 0.0946178 22.3644C-0.0519018 23.7766 -0.0225979 26.8559 0.143458 28.1995C0.631856 32.0535 1.931 35.584 4.06041 38.8693C5.91633 41.7427 8.71974 44.4886 11.7185 46.3911C14.0726 47.8719 17.169 49.1468 19.6794 49.647C20.1092 49.7352 20.5585 49.8235 20.6855 49.8529L20.9004 49.9019V40.0951V30.2883H17.8723H14.8443V26.8069V23.3255H17.8626H20.8809L20.9199 19.7656C20.959 16.294 20.9688 16.1959 21.2227 15.2447C22.0433 12.1653 24.0164 10.1255 26.9663 9.30175C28.2752 8.9389 29.633 8.86045 32.1531 8.99774C33.4034 9.06639 34.5951 9.14485 34.8002 9.17427L35.1616 9.2233V12.3026V15.382H33.0322C31.8601 15.382 30.6391 15.431 30.3265 15.4898C29.3106 15.6762 28.6562 16.1469 28.285 16.9413C28.0896 17.3629 28.0799 17.5787 28.0506 20.354L28.0212 23.3255H31.44C34.6244 23.3255 34.8686 23.3353 34.8686 23.4922C34.8686 23.708 34.0969 29.7686 34.0383 30.0628L33.9895 30.2883H31.0102H28.031V40.1442V50H28.2557C28.6073 50 30.1604 49.7058 31.1568 49.4606C33.4132 48.8918 36.2654 47.6758 38.1897 46.4695C40.3484 45.126 43.1421 42.6351 44.5584 40.8306C47.3228 37.2806 48.9735 33.554 49.7257 29.1703C49.9894 27.6601 50.0871 24.1591 49.9113 22.4723C49.1689 15.1172 45.2324 8.52702 39.0688 4.28067C35.7673 2.0153 31.9968 0.603117 27.9529 0.13239C26.4486 -0.0441321 23.4205 -0.0441321 21.9456 0.13239Z"
-                />
-              </svg>
-            </a>
-
             <a href="https://www.instagram.com/schoolhodkonem/" target="_blank">
               <svg
                 viewBox="0 0 50 50"
@@ -727,6 +726,33 @@
                 />
                 <path
                   d="M23.4656 20.4026C22.1863 20.8227 21.0046 21.9363 20.4968 23.2063C20.3014 23.6947 20.2624 23.9389 20.2624 24.994C20.2624 26.0393 20.3014 26.2933 20.487 26.7719C20.9655 27.954 22.0398 29.0286 23.2215 29.5072C23.7 29.6929 23.9539 29.7319 24.9989 29.7319C26.0439 29.7319 26.2978 29.6929 26.7763 29.5072C27.958 29.0286 29.0323 27.954 29.5108 26.7719C29.6964 26.2933 29.7354 26.0393 29.7354 24.994C29.7354 23.9487 29.6964 23.6947 29.5108 23.216C29.0323 22.034 27.9483 20.9497 26.7763 20.4905C25.9657 20.1681 24.3153 20.1291 23.4656 20.4026Z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://t.me/hodkonemkz" target="_blank">
+              <svg
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
+              >
+                <path
+                  d="M24 0C37.2553 0 48 10.7447 48 24C48 37.2553 37.2553 48 24 48C10.7447 48 0 37.2553 0 24C0 10.7447 10.7447 0 24 0ZM32.279 33.7826C32.7203 32.4282 34.7885 18.9297 35.0442 16.2699C35.1214 15.4643 34.8668 14.929 34.368 14.6901C33.7649 14.4 32.8717 14.545 31.8355 14.9186C30.4143 15.431 12.2452 23.1454 11.1955 23.592C10.2 24.0146 9.25878 24.4758 9.25878 25.1437C9.25878 25.6132 9.53739 25.8772 10.3054 26.1517C11.1047 26.4365 13.1176 27.047 14.3061 27.3746C15.4508 27.6908 16.7541 27.4163 17.4845 26.9624C18.2588 26.4814 27.1941 20.5023 27.8358 19.9784C28.4765 19.4546 28.9878 20.1256 28.464 20.6504C27.9402 21.1743 21.8066 27.1273 20.9979 27.9517C20.016 28.9523 20.713 29.9896 21.3715 30.4049C22.1238 30.8786 27.5343 34.5078 28.3492 35.0901C29.1642 35.6723 29.9906 35.9363 30.7471 35.9363C31.5037 35.9363 31.9023 34.9398 32.279 33.7826Z"
+                />
+              </svg>
+            </a>
+
+            <a href="https://www.youtube.com/@schoolhodkonem" target="_blank"
+              ><svg
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hover:fill-[#FDCD39] w-12 max-sm:w-8 duration-200 hover:scale-110 cursor-pointer"
+              >
+                <path
+                  d="M20.7451 28.8883L28.8931 23.9998L20.7451 19.1113V28.8883Z"
+                />
+                <path
+                  d="M24 0C10.746 0 0 10.7445 0 24C0 37.2555 10.746 48 24 48C37.254 48 48 37.254 48 24C48 10.746 37.254 0 24 0ZM37.032 25.0515C37.032 27.3015 36.771 29.5515 36.771 29.5515C36.771 29.5515 36.516 31.4685 35.736 32.31C34.7445 33.417 33.6345 33.423 33.1245 33.489C29.4765 33.768 24 33.777 24 33.777C24 33.777 17.223 33.711 15.138 33.498C14.5575 33.3825 13.257 33.4155 12.264 32.31C11.4825 31.467 11.229 29.5515 11.229 29.5515C11.229 29.5515 10.968 27.303 10.968 25.0515V22.9425C10.968 20.6925 11.229 18.444 11.229 18.444C11.229 18.444 11.484 16.527 12.264 15.6825C13.2555 14.574 14.3655 14.568 14.8755 14.505C18.522 14.223 23.994 14.223 23.994 14.223H24.006C24.006 14.223 29.478 14.223 33.1245 14.505C33.633 14.568 34.7445 14.574 35.736 15.681C36.5175 16.5255 36.771 18.4425 36.771 18.4425C36.771 18.4425 37.032 20.6925 37.032 22.9425V25.0515Z"
                 />
               </svg>
             </a>
