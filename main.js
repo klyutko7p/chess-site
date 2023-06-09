@@ -95,7 +95,7 @@ async function sendForm(e) {
   var phone = document.getElementById("phone").value;
 
   var url =
-    "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxVbp3dNIUYTXtubkKhXOk1Uc5DTH3HZ-cuIkC7wshRc0LKX5rgbKsKZCFFxDPPJykjlA/exec";
+    "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbwgFfNQP95vj2y8qaOVISzAeLZyaxj5NVKAee26HjY54ZyckpmHIG_M4gtHrIRLXZ9I/exec";
   url += "?name=" + encodeURIComponent(name);
   url += "&phone=" + encodeURIComponent(phone);
   url += "&origin=https://klyutko7p.github.io/chess-site/";
