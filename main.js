@@ -95,10 +95,24 @@ async function sendForm(e) {
   var phone = document.getElementById("phone").value;
 
   var url =
-    "https://script.google.com/macros/s/AKfycbxpDLVUUx1gURVWVbTrvq1qEu1ts511XYLXxLPGE_LcXwEX7fxGTxeg4FObgYrUQkM3Gg/exec";
+    "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxVbp3dNIUYTXtubkKhXOk1Uc5DTH3HZ-cuIkC7wshRc0LKX5rgbKsKZCFFxDPPJykjlA/exec";
+  url += "&origin=https://klyutko7p.github.io/chess-site/";
   url += "?name=" + encodeURIComponent(name);
   url += "&phone=" + encodeURIComponent(phone);
-  window.location.href = url;
+
+  try {
+    const response = await fetch(url);
+
+    if (response.ok) {
+      alert("Заявка успешно отправлена.");
+      // Дополнительные действия после успешной отправки заявки
+    } else {
+      throw new Error("Произошла ошибка при отправке заявки.");
+    }
+  } catch (error) {
+    console.error(error);
+    // Обработка ошибок при отправке заявки
+  }
 }
 
 let form = document.querySelector("#application-form");
