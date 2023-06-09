@@ -54,6 +54,12 @@ swiperElItems.initialize();
 let burgerMenu = document.querySelector(".burger-menu");
 let exitButton = document.querySelector(".exit-menu");
 let navbarMenu = document.querySelector(".navbar-menu");
+let modal = document.querySelector(".modal");
+let closeButton = document.querySelector(".close-modal");
+
+closeButton.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
 
 burgerMenu.addEventListener("click", () => {
   navbarMenu.classList.remove("hidden");
@@ -101,8 +107,8 @@ async function sendForm(e) {
 
   var response = await fetch(url);
   if (response.ok) {
-    alert("Заявка успешно отправлена.");
-    // Дополнительные действия после успешной отправки заявки
+    modal.classList.remove("hidden");
+    modal.classList.add("modal-style", "bg-opacity-90");
   } else {
     alert("Произошла ошибка при отправке заявки.");
   }

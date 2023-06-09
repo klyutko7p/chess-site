@@ -357,7 +357,7 @@
             <swiper-slide>
               <img
                 src="assets/images/coaches/9-coach.png"
-                class="mx-auto h-[450px] max-w-[350px] min-h-[450px] max-sm:h-full"
+                class="mx-auto h-[450px] max-w-[350px] max-[400px]:max-w-[296px] min-h-[450px] max-sm:h-full"
                 alt=""
               />
               <div class="text-center mt-5">
@@ -599,14 +599,14 @@
                 required
                 name="phone"
                 id="phone"
-                type="number"
+                type="text"
                 placeholder="Ваш телефон"
               />
             </div>
             <div class="flex justify-center">
               <button
                 type="submit"
-                class="border-2 text-base border-[#FDCD39] font-bold py-3 px-16 rounded-full"
+                class="border-2 text-base hover:bg-[#FDCD39] duration-200 border-[#FDCD39] font-bold py-3 px-16 rounded-full"
               >
                 Отправить
               </button>
@@ -761,6 +761,19 @@
         </section>
       </section>
     </main>
+
+    <div
+      class="modal hidden max-sm:w-full max-sm:h-full text-center"
+      style="background-image: 'assets/images/bg-horse.png'"
+    >
+      <h1 class="text-2xl font-bold">Спасибо, вы успешно отправили заявку!</h1>
+      <h1 class="text-2xl font-bold">Скоро с вами свяжутся.</h1>
+      <button
+        class="close-modal border-2 mt-5 text-base hover:bg-[#FDCD39] duration-200 border-[#FDCD39] font-bold py-3 px-16 rounded-full"
+      >
+        Закрыть
+      </button>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="main.js"></script>
