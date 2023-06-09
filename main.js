@@ -96,9 +96,9 @@ async function sendForm(e) {
 
   var url =
     "https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbxVbp3dNIUYTXtubkKhXOk1Uc5DTH3HZ-cuIkC7wshRc0LKX5rgbKsKZCFFxDPPJykjlA/exec";
-  url += "&origin=https://klyutko7p.github.io/chess-site/";
   url += "?name=" + encodeURIComponent(name);
   url += "&phone=" + encodeURIComponent(phone);
+  url += "&origin=https://klyutko7p.github.io/chess-site/";
 
   try {
     const response = await fetch(url);
