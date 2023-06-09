@@ -74,8 +74,15 @@ burgerMenu.addEventListener("click", () => {
 });
 
 exitButton.addEventListener("click", () => {
-  navbarMenu.cl;
   navbarMenu.className = "hidden";
+});
+
+let items = document.querySelectorAll(".navbar-items");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    navbarMenu.className = "hidden";
+  });
 });
 
 AOS.init();
