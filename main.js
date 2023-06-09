@@ -98,21 +98,7 @@ async function sendForm(e) {
     "https://script.google.com/macros/s/AKfycbxpDLVUUx1gURVWVbTrvq1qEu1ts511XYLXxLPGE_LcXwEX7fxGTxeg4FObgYrUQkM3Gg/exec";
   url += "?name=" + encodeURIComponent(name);
   url += "&phone=" + encodeURIComponent(phone);
-
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", url);
-  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      alert("Заявка успешно отправлена.");
-      // Дополнительные действия после успешной отправки заявки
-    }
-  };
-
-  await xhr.send();
-
-  window.location.href = await url;
+  window.location.href = url;
 }
 
 let form = document.querySelector("#application-form");
