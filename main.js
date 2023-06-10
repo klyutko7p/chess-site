@@ -91,24 +91,23 @@ items.forEach((item) => {
   });
 });
 
-AOS.init();
-
-// Ваш идентификатор таблицы Google Sheets
 async function sendForm(e) {
   e.preventDefault();
 
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
 
-  var url =
-    "https://script.google.com/macros/s/AKfycbw0AtDBB1xA1yyniW8zHA-e1R7k0dZ0WuunYkqOcAUElBiyZAGUbscZO4Qq3pbsraEHQg/exec";
+  let url =
+    "https://script.google.com/macros/s/AKfycbwVPTFeNqGHib0IM1dLqIbMfiTsrILTqm2DmhJQJ65BxVAzXmgDk9d6DDikT0XWOpGuew/exec";
   url += "?name=" + encodeURIComponent(name);
   url += "&phone=" + encodeURIComponent(phone);
 
-  var response = await fetch(url);
+  let response = await fetch(url);
   if (response.ok) {
+    document.getElementById("name").value = "";
+    document.getElementById("phone").value = "";
     modal.classList.remove("hidden");
-    modal.classList.add("modal-style", "bg-opacity-90");
+    modal.classList.add("modal-style");
   } else {
     alert("Произошла ошибка при отправке заявки.");
   }

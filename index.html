@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="assets/images/favicon.img.png" type="image/x-icon" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Школа шахмат "Ход конём"</title>
   </head>
@@ -35,6 +33,7 @@
             <li class="nav-item"><a href="#reviews">Отзывы</a></li>
             <li class="nav-item"><a href="#items">Товары</a></li>
             <li class="nav-item"><a href="#contacts">Контакты</a></li>
+            <li class="nav-item"><a href="#vacancy">Вакансии</a></li>
           </ul>
         </nav>
         <div class="space-y-2 hidden max-lg:block burger-menu">
@@ -57,7 +56,7 @@
       <div class="absolute top-5 right-10">
         <button class="text-4xl exit-menu">X</button>
       </div>
-      <nav class="flex flex-col text-2xl">
+      <nav class="flex flex-col text-2xl space-y-5">
         <a href="#about" class="navbar-items hover:text-[#FDCD39] duration-200"
           >О нас</a
         >
@@ -80,6 +79,11 @@
           >Контакты</a
         >
         <a
+          href="#vacancy"
+          class="navbar-items hover:text-[#FDCD39] duration-200"
+          >Вакансии</a
+        >
+        <a
           href="#form"
           class="border-2 a-button mt-10 text-lg border-[#FDCD39] font-bold py-1 px-3 rounded-full navbar-items"
         >
@@ -93,7 +97,6 @@
       <!-- Начальная страница -->
       <section
         class="bg-black pt-40 pb-24 p-5 max-xl:pt-40 max-xl:p-10 max-md:text-center text-white mb-24 flex items-center gap-16 justify-around max-md:flex-col"
-        style="background-image: url('assets/images/bg-horse.png')"
       >
         <article class="flex items-center justify-center flex-col">
           <div class="text-[40px] max-sm:text-[32px] mb-12 uppercase font-bold">
@@ -121,7 +124,7 @@
           />
           <a
             href="#form"
-            class="border-2 a-button border-[#FDCD39] w-2/3 mt-12 text-[20px] font-bold text-center py-3 px-5 rounded-full"
+            class="border-2 a-butto max-sm:w-full hover:bg-[#FDCD39] duration-200 border-[#FDCD39] w-2/3 mt-12 text-[20px] font-bold text-center py-3 px-5 rounded-full"
           >
             <button>Записаться на пробный урок</button>
           </a>
@@ -222,7 +225,6 @@
         style="background-image: url('assets/images/bg-horse.png')"
       >
         <!-- Тренеры -->
-
         <section
           id="coaches"
           class="text-white p-10 max-sm:p-3 max-[320px]:p-0 coaches"
@@ -565,7 +567,7 @@
       <!-- Форма заявки -->
       <section
         id="form"
-        class="bg-black gap-20 p-16 max-sm:p-3 py-32 mt-24 text-white flex items-center justify-around max-lg:flex-col-reverse"
+        class="bg-black gap-20 p-16 max-sm:p-3 py-56 mt-24 text-white flex items-center justify-around max-lg:flex-col-reverse"
         style="background-image: url('assets/images/bg-horse.png')"
       >
         <article>
@@ -573,7 +575,7 @@
             id="application-form"
             class="border-4 border-[#FDCD39] bg-center bg-black min-w-[500px] max-md:min-w-0 max-md:w-full font-medium rounded-[21px] p-10"
           >
-            <h1 class="text-center text-4xl font-bold mb-16">
+            <h1 class="text-center text-2xl font-bold mb-16">
               Оставьте свою заявку
             </h1>
             <div class="flex flex-col mb-16">
@@ -627,7 +629,7 @@
       </section>
 
       <!-- Контакты -->
-      <section id="contacts" class="px-10 mt-24">
+      <section id="contacts" class="px-10 py-40 max-sm:py-10">
         <h1 class="text-center text-4xl mb-24 mt-16">Контакты</h1>
         <section class="grid grid-cols-3 max-lg:grid-cols-1 max-lg:space-y-10">
           <article class="text-center">
@@ -763,7 +765,7 @@
     </main>
 
     <div
-      class="modal hidden backdrop-blur-3xl max-sm:w-full max-sm:h-full text-center"
+      class="modal hidden max-sm:w-full max-sm:h-full text-center"
       style="background-image: 'assets/images/bg-horse.png'"
     >
       <h1 class="text-2xl font-bold">Спасибо, вы успешно отправили заявку!</h1>
@@ -775,11 +777,13 @@
       </button>
     </div>
 
+    <!-- Вакансии -->
     <section
+      id="vacancy"
       class="bg-black text-white p-10 font-bold space-y-3 text-xl"
       style="background-image: url('assets/images/bg-horse.png')"
     >
-      <h1 class="text-center">Хотите работать с нами?</h1>
+      <h1 class="text-center text-2xl">Хотите работать с нами?</h1>
       <div class="flex items-center justify-center gap-3 flex-col">
         <h1>
           <a
@@ -791,7 +795,6 @@
         <img src="assets/images/whatsapp.png" class="max-w-[50px]" alt="" />
       </div>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
