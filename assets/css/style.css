@@ -74,3 +74,23 @@ p {
   z-index: 20;
   border-radius: 40px;
 }
+
+.button-back {
+  padding: 24px;
+  border-radius: 20px;
+  border: 0;
+  font-size: 20px;
+  background-color: #fdcd39;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid transparent;
+  font-weight: bold;
+}
+
+.button-back:hover {
+  transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #fdcd39;
+  color: white;
+}
