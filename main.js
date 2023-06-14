@@ -7,10 +7,6 @@ Object.assign(swiperElCoach, {
       slidesPerView: 1,
       spaceBetween: 100,
     },
-    800: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
     1024: {
       slidesPerView: 2,
       spaceBetween: 40,
